@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Main_Ingredient</td>
+        <td>Sub_Ingredient</td>
+        <td>F_number</td>
+    </tr>
+    {{#each food}}
+    <tr>
+        <td>{{Name}}</td>
+        <td>{{Main_Ingredient}}</td>
+        <td>{{Sub_Ingredient}}</td>
+        <td>{{F_number}}</td>
+    </tr>
+    {{/each}}
+</table>

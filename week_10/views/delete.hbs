@@ -1,0 +1,30 @@
+<h1>{{ title }}</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Main_Ingredient</td>
+        <td>Sub_Ingredient</td>
+        <td>F_number</td>
+    </tr>
+    {{#each food}}
+        <form method="post">
+            <tr>
+                <td>{{Name}}</td>
+                <td>{{Main_Ingredient}}</td>
+                <td>{{Sub_Ingredient}}</td>
+                <td>{{F_number}}</td>
+                <td style="border: none; margin-left: 10px;">
+                    <button
+                        style="margin-left: 10px;"
+                        name='delBtn'
+                        type="submit"
+                        value="{{F_number}}"
+                        formaction="/delete"
+                    >
+                    삭제
+                    </button>
+                </td>
+            </tr>
+        </form>
+    {{/each}}
+</table>
